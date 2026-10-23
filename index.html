@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultor Médico - Agente IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Contenedor principal de la aplicación -->
+  <main class="app-container">
+    
+    <!-- Zona de chat: muestra el historial de mensajes -->
+    <section class="zona-de-chat" id="zona-de-chat">
+      <!-- Mensaje de bienvenida inicial del agente -->
+      <div class="mensaje agente">
+        <div class="avatar">🩺</div>
+        <div class="burbuja">
+          ¡Hola! Soy tu <strong>Consultor Médico</strong>. 👋🏼<br>
+          ¿En qué puedo ayudarte hoy con tus trámites o consultas de salud?
+        </div>
+      </div>
+    </section>
+
+    <!-- Zona de escritura: formulario e inputs para enviar mensajes -->
+    <section class="zona-de-escritura">
+      <form id="chat-form">
+        <textarea 
+          id="user-input" 
+          placeholder="Escribí tu consulta sobre trámites médicos aquí..." 
+          rows="2" 
+          required
+        ></textarea>
+        <button type="submit" id="send-button">
+          <span>Enviar</span> 🚀
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Scripts de configuración y lógica principal -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
